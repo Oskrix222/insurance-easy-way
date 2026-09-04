@@ -32,9 +32,6 @@ export type LeadFormData = z.infer<typeof leadSchema>;
 export const submitLead = createServerFn({ method: "POST" })
   .validator((data) => leadSchema.parse(data))
   .handler(async ({ data }) => {
-    const { createClient } = await import("@supabase/supabase-js");
-    const { type Database } = await import("@/integrations/supabase/types");
-
     const supabase = createClient<Database>(
       process.env["SUPABASE_URL"]!,
       process.env["SUPABASE_PUBLISHABLE_KEY"]!,
@@ -45,6 +42,7 @@ export const submitLead = createServerFn({ method: "POST" })
         },
       },
     );
+
 
     const { error } = await supabase.from("leads").insert({
       name: data.name,
