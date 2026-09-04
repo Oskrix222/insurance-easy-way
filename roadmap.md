@@ -1,0 +1,1 @@
+- [x] Zbudować stronę główną na podstawie wireframe'u (nawigacja, hero z hook/motto + obraz, sekcja scroll)
