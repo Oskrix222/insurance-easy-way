@@ -1,1 +1,2 @@
 - [x] Zbudować stronę główną na podstawie wireframe'u (nawigacja, hero z hook/motto + obraz, sekcja scroll)
+- [x] Pełna strona wg wszystkich makiet: o nas + statystyki, 4 kategorie, ubezpieczenie grupowe, opinie, formularz, stopka (SEO + responsywność)
