@@ -25,7 +25,7 @@ export const insuranceOptions = [
   { value: "business", label: "Grupowe dla firm" },
 ];
 
-export function LeadForm({ preselected }: { preselected?: string }) {
+export function LeadForm({ preselected }: { preselected?: string | undefined }) {
   const sendLead = useServerFn(submitLead);
 
   const {
